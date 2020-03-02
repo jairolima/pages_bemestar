@@ -1,0 +1,3 @@
+user-agent:*
+disallow:http://www.policlinicabemestar/Nuvem
+sitemap:http://www.policlinicabemestar.com/sitemap.xml

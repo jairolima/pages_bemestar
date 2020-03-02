@@ -1,0 +1,278 @@
+header {
+  height: 100%; /* You must set a specified height */
+  min-height: 720px;
+}
+
+.primary-green {
+  color: #347b60;
+}
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  min-height: 720px;
+  position: relative;
+}
+.parent::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  min-height: 720px;
+  /* background-image: url("../img/bg.png"); */
+  background-image: url("../img/bg2.png");
+  -webkit-clip-path: polygon(0 0, 100% 0, 20% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 20% 100%, 0% 100%);
+}
+
+.inner {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  align-items: center;
+  top: 0%;
+  height: 100vh;
+  min-height: 720px;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.inner img {
+  vertical-align: bottom;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+}
+
+#about {
+  background-image: url("../img/about.png");
+  height: 600px;
+}
+
+#especialidades {
+  background-color: green;
+  height: 800px;
+}
+
+/* #about2 {
+    background-image: url("../img/about2.png");
+    height: 400px;
+} */
+
+.topspace {
+  padding-top: 5vh;
+}
+
+.topspaceicon {
+  margin-top: 17vh;
+}
+
+.topiconspace {
+  padding-top: 5px;
+}
+
+h1 {
+  color: green;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 49px;
+  padding-top: 10vh;
+}
+
+h4 {
+  color: gray;
+  font-size: 36px;
+}
+
+h5 {
+  color: rgb(255, 255, 255);
+  font-size: 72px;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 2vh;
+}
+
+i {
+  font-size: 3vh;
+}
+
+#iconspace {
+  padding-top: 4vh;
+}
+
+#logospace {
+  padding-top: 2vh;
+}
+
+#menuspace {
+  padding-top: 0.5vh;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 720px;
+}
+h5 {
+  font-size: calc(12px + 1.5vw);
+}
+
+.material-icons {
+  display: inline-flex;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 1870px) {
+  h4 {
+    font-size: 30px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1700px) {
+  h1 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1475px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1322px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  i {
+    font-size: 2.5vh;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  i {
+    font-size: 2.3vh;
+  }
+}
+
+.bg-texture {
+  background-image: url("../img/about.png");
+}
+
+.bg-texture2 {
+  background-color: #347b60;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238fcbb6'/%3E%3Cstop offset='1' stop-color='%23347b60'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23347b60' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23347b60' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.card-panel {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: transparent;
+}
+
+.card-section {
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(38, 90, 70, 0.9) 100%,
+      rgba(38, 90, 70, 0.9) 100%
+    ),
+    url("../img/active.jpg");
+  height: 1000px;
+  width: 100%;
+}
+
+.item {
+  border-radius: 50%;
+  border: 2px solid #8fcbb6;
+  height: 133px;
+  width: 133px;
+}
+
+.footer-card {
+  background: rgba(0, 0, 0, 0.5) 100%;
+  height: 242px;
+  width: 100%;
+  margin-top: 114px;
+}
+
+.form-style {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 40px;
+  width: 70%;
+}
+
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: white;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.arrow-right {
+  margin-top: 150px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+
+  border-left: 30px solid #347b60;
+}
+
+input {
+  color: white;
+  padding-left: 15px;
+}
